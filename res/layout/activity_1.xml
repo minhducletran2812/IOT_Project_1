@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context="bku.iot.vn.iot_dashboard.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="10%"
+        app:layout_marginTopPercent="10%"
+
+        android:background="@drawable/iot_rec"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:text="32°C" />
+
+    <ImageView
+        android:id="@+id/imageTemperature"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="24%"
+        app:layout_marginTopPercent="37.5%"
+        android:background="@drawable/ic_temper"
+        />
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:background="#ff0000"
+
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="60%"
+        app:layout_marginTopPercent="10%"
+
+        android:textSize="30dp"
+        android:textColor="#06e170"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:text="30%" />
+</android.support.percent.PercentRelativeLayout>
